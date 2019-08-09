@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <!-- Fixes bug when indexing attributes codes corresponding to MySQL/MariaDB reserved keywords -->
+    <!-- Affected versions : 2.2.8 - 2.2.9 -->
+    <preference for="Magento\Catalog\Model\Indexer\Product\Flat\FlatTableBuilder" type="Magentofix\Catalog\Model\Indexer\Product\Flat\FlatTableBuilder" />
+</config>
